@@ -61,7 +61,7 @@ links[9] = "https://www.imdb.com/title/tt0137523/?ref_=adv_li_tt";
 let htmlCode = ""
 
 for (let count = 0; count < titles.length; count++){
-      htmlCode += "<tr><td><a href='" + links[count] + "'>" + titles[count] + "</a><td><td>" + summaries[count] + "</td><td>" + ratings[count] + "</td></tr>"
+      htmlCode += "<tr><td><a href='" + links[count] + "'>" + titles[count] + "</a><td>" + summaries[count] + "</td><td>" + ratings[count] + "</td></tr>"
 }
 
 //htmlCode += "<tr><td><a href='" + links[count] + "'>" + titles[count] + "</a><td><td>" + summaries[" + count + "] + "</td><td>" + rating[count] + "</td></tr>"
