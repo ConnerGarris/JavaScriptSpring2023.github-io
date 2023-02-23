@@ -10,7 +10,7 @@
 */
 
 // Maximum Length of Review
-const MAX_REVIEW = 100;
+const MAX_REVIEW = 1000;
 document.getElementById("limit").innerHTML = MAX_REVIEW;
 
 // Reference to elemets in the web page
