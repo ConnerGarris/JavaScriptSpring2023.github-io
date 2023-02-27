@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 7th Edition
+      Chapter 1
+      Hands-on Project 1-4
+
+      Author:Conner Garris
+      Date:1/19/23 
+
+      Filename: index.htm
+
+   
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 1-4</title>
+   <link rel="stylesheet" href="https://connergarris.github.io/SoftwareDev2023/clientside/chapter1/HandsOnProject1-4/1-4.css">
+
+</head>
+  <script>
+   homeStreet = "1 Main St."
+    homeCity = "Sicilia"
+    homeState = "MA"
+    homeCode = "02103"
+    workStreet = "15 Oak Ln."
+    workCity = "Central City"
+    workState = "MA"
+    workCode = "02104"
+ function updateHomeAddress(){
+   document.getElementById("street").value = homeStreet;
+    document.getElementById("city").value = homeCity;
+    document.getElementById("state").value = homeState;
+    document.getElementById("code").value = homeCode;
+  }
+   function updateWorkAddress(){
+   document.getElementById("street").value = workStreet;
+    document.getElementById("city").value = workCity;
+    document.getElementById("state").value = workState;
+    document.getElementById("code").value = workCode;
+  }
+  </script>
+<body>
+   <header>
+      <h1>
+         Hands-on Project 1-4
+      </h1>
+   </header>
+
+   <article>
+      <h2>Shipping Address</h2>
+      <form>
+     
+         <fieldset id="addroptions">
+            <legend><span>Choose an address</span></legend>
+            <label for="homeoption" id="homeaddr">
+               <div>
+                 Home
+              </div>
+             
+               <script>
+              homeStreet <br>
+                homeCity, homeState homeCode
+              </script>
+             
+              <input type="radio" name= "shippingaddr" id="homeoption" onclick="updateHomeAddress()"  </input>  
+           
+         
+           
+           
+           </label>
+            <label for="workoption" id="workaddr">
+               <div>
+                 Work
+              </div>
+               
+              <script>
+              workStreet <br>
+                workCity, workState workCode
+              </script>
+               
+             
+             
+              <input type="radio" id="workoption" name="shippingaddr" onclick="updateWorkAddress()" />
+           
+           
+           </label>
+       
+       
+        </fieldset>
+         
+         
+          <fieldset id="contactinfo">
+            <label for="street">
+              Street Address
+              <input type="text" id="street" value="" />
+            </label>
+            <label for="city">
+              City
+              <input type="text" id="city" />
+            </label>
+            <label for="state">
+              State
+              <input type="text" id="state" />
+            </label>
+            <label for="code">
+              Zip
+              <input type="text" id="code" />
+            </label>
+          </fieldset>
+         
+     </form>
+   </article>
+</body>
+</html>
