@@ -1,0 +1,19 @@
+/* For screens smaller than 600px (mobile devices) */
+@media (max-width: 600px) {
+    .mobile {
+        display: block;
+    }
+    .tablet-desktop {
+        display: none;
+    }
+}
+
+/* For screens larger than 600px (tablets and desktops) */
+@media (min-width: 601px) {
+    .mobile {
+        display: none;
+    }
+    .tablet-desktop {
+        display: block;
+    }
+}
