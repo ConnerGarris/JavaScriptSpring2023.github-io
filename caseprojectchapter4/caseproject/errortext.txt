@@ -1,0 +1,12 @@
+
+This code will throw an error if any of the required fields are empty or if the phone number is not 10 digits long. The error message will be displayed in an element with the ID "error-message", and form submission will be prevented if there is an error.
+
+As for the debugging methods used in this project:
+
+    Print statements: I used console.log() statements to print out the values of variables and to check if certain code blocks were executing properly.
+
+    Breakpoints: I set breakpoints in the code using the Chrome Developer Tools to pause execution at specific points and inspect the current state of the program.
+
+    Error handling: I used try-catch blocks to catch and handle errors that could occur during form validation, and displayed meaningful error messages to the user.
+
+Overall, these debugging methods helped me identify and fix issues in the code and ensure that the form validation was working correctly.
