@@ -1,0 +1,223 @@
+/* Style Resets*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display: block;
+}
+
+
+h1 {
+    text-align: center;
+    font-family: 'Macondo', cursive;
+    color: #925532;
+    font-size: 200%;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Macondo', cursive;
+    color: #925532;
+    font-size: 200%;
+}
+
+
+header {
+    background-image: url("images/coffeebeans.jpg");
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
+#headerbox {
+    border: 2px solid #925532;
+    /*border-radius: 12px;*/
+    
+    background-color: black;
+    width: 40%;
+    height: 40%;
+    margin: auto;
+}
+
+#navbox {
+    /*border: 12px solid #925532;*/
+    /*border-radius: 12px;*/
+    width: 40%;
+    height: 40%;
+    margin: auto;
+}
+
+#navtext a {
+    color: #925532;
+    text-align: center;
+    font-family: 'Macondo', cursive;
+    text-decoration: none;
+    margin: auto;
+}
+
+#aboutuscontainer {
+  display: flex;
+  flex-direction: row;
+}
+
+
+#aboutusinfo {
+  text-align: center;
+  font-size: 2em;
+  background: linear-gradient(black, #925532);
+  border: 2px solid #925532;
+
+  /*background-image: url("images/testimg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  /*
+  margin-left: 0;
+  float: left;
+  width: 50%;
+  height: 10%;
+  */
+  width: 50%;
+  float: left;
+}
+
+#coffeehousecontainer{
+  /**/
+  width: 50%;
+  float: right;
+}
+
+.coffeehouse {
+  /*
+  height: 500px;
+  width: 500px;
+  
+  margin-right: 0;
+  float: right;
+  */
+  border: 2px solid #925532;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Blog Post CSS*/
+
+#blogcontainer {
+  border: 2px solid #925532;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 0;
+}
+
+.blogpost {
+  flex: 1 1 50%;
+}
+
+.instagram-media {
+  flex: 1 1 50%;
+}
+
+.opentime{
+  padding-top: 35px;
+}
+
+
+
+
+body {
+  background-color: black;
+  color: white;
+}
+
+#openschedule {
+  margin: auto;
+  border: 2px solid  #925532;
+  width: 50%;
+}
+
+#openschedule ol {
+  font-family: 'Quicksand', sans-serif;
+  list-style-type: none;
+  text-align: center;
+  font-size: 2em;
+}
+
+#location {
+  margin: auto;
+  border: 2px solid  #925532;
+  text-align: center;
+  font-size: 2em;
+  width: 75%;
+}
+
+iframe {
+  filter: grayscale(100%) invert(100%) brightness(70%) sepia(100%) hue-rotate(-20deg);
+}
+
+/*Styling for mobile phones hides menu png and displays it in text format*/
+@media only screen and (max-width: 769px) {
+  .desktop {
+    display: none
+  }
+}
+
+/*Styling for desktop*/
+@media only screen and (min-width: 769px){
+  .mobile {
+    display: none
+  }
+
+}
+
+
+
+/* nav table styles */
+table {
+    border-collapse: collapse;
+    border: 2px solid  #925532;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    margin: auto;
+    background-color: black;
+  }
+  
+  td, th {
+    border: 1px solid  #925532;
+    padding: 10px 20px;
+  }
+  
+  th {
+    color: white;
+    /*background-color: rgb(235,235,235);*/
+  }
+  
+  td {
+    text-align: center;
+  }
+  
+
+  /*
+  tr:nth-child(even) td {
+    background-color: rgb(250,250,250);
+  }
+  
+  tr:nth-child(odd) td {
+    background-color: rgb(245,245,245);
+  }
+  */
+  caption {
+    padding: 10px;
+  }
+  
+th {
+    background-color: rgb(235,235,235);
+}
+
+
+
+
