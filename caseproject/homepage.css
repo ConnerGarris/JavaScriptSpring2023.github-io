@@ -155,7 +155,7 @@ body {
   width: 75%;
 }
 
-iframe {
+.map {
   filter: grayscale(100%) invert(100%) brightness(70%) sepia(100%) hue-rotate(-20deg);
 }
 
