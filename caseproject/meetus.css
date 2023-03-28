@@ -80,8 +80,6 @@ h2 {
 
 header {
     background-image: url("images/coffeebeans.jpg");
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
     top: 0;
     z-index: 999;
 }
@@ -117,6 +115,39 @@ body {
   background-color: black;
   color: white;
 }
+
+/*Styling for mobile phones hides menu png and displays it in text format*/
+@media only screen and (max-width: 769px) {
+  .desktop {
+    display: none
+  }
+
+  ol {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1.5em;
+  }
+
+  header {
+    position: absolute;
+  }
+
+}
+
+/*Styling for desktop*/
+@media only screen and (min-width: 769px){
+  .mobile {
+    display: none
+  }
+  
+  header{
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
+
+}
+
 
 
 /* nav table styles */
