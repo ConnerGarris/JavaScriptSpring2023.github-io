@@ -1,0 +1,205 @@
+    /* Style Sheet for WebDev2023 Portfolio */
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        /*background-color: #f2f2f2;*/
+        background: linear-gradient(purple, black );
+        }
+        
+        img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        }
+        
+        h1 {
+        font-size: 36px;
+        margin-top: 50px;
+        /*color: #4d4d4d;*/
+        color: purple;
+        font-family: 'Press Start 2P', cursive;
+        }
+        
+        h2 {
+        font-size: 24px;
+        margin-top: 25px;
+        /*color: #4d4d4d;*/
+        color: purple;
+        font-family: 'Press Start 2P', cursive;
+        }
+        
+        h3 {
+        font-size: 18px;
+        margin-top: 50px;
+        color: #4d4d4d;
+        font-family: 'Press Start 2P', cursive;
+        }
+    
+        /* style rules for nav */
+        nav {
+            text-align: center;
+            font-size: 18px;
+            color: #4d4d4d
+        }
+    
+        nav a {
+            color: purple;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 2em;
+        }
+
+        nav a:hover {
+            background-color: yellow;
+        }
+        
+        ul {
+        list-style-type: none;
+        font-size: 16px;
+        margin-top: 25px;
+        color: #4d4d4d;
+        }
+        
+        li {
+        margin-bottom: 15px;
+        }
+        
+        p {
+        margin-bottom: 0;
+        }
+        
+        a {
+        color: #0077c9;
+        text-decoration: none;
+        }
+    
+        body li a {
+            color: purple
+        }
+        
+        iframe {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        border: 1px solid #4d4d4d;
+        }
+
+        footer {
+            font-family: 'Press Start 2P', cursive;
+            font-size: 1em;
+            color: purple;
+        }
+
+        footer a {
+            color: purple;
+            font-size: 1.5em;
+            font-family: 'Bebas Neue', cursive;
+        }
+
+        footer a:hover {
+            background-color: yellow;
+        }
+
+        #navbox {
+            width: 800px;
+            padding: 0px;
+            margin: 10px auto;
+            border: 15px solid purple;
+            border-radius: 12px;
+            background-color: black;
+        }
+
+        #footerbox {
+            width: 400px;
+            padding: 0px;
+            margin: 10px auto;
+            border: 15px solid purple;
+            border-radius: 12px;
+            background-color: black;
+        }
+
+        #headerbox {
+            width: auto;
+            padding: 0px;
+            margin: 10px auto;
+            border: 15px solid purple;
+            border-radius: 12px;
+            background-color: black;
+        }
+
+
+        /* For mobile phones: */
+        @media only screen and (max-width: 769px) {
+            .desktop {
+                display: none;
+            }
+            #desktop{
+                display: none;
+            }
+            nav {
+                text-align: center;
+            }
+
+            #navbox {
+                width: auto;
+                padding: auto;
+                margin: auto;
+                border: 15px solid purple;
+                border-radius: 12px;
+                text-align: center;
+            }
+
+            #navbox a {
+                color: yellow;
+            }
+
+            #footerbox {
+                width: auto;
+                padding: auto;
+                margin: auto;
+                border: 15px solid purple;
+                border-radius: 12px;
+                text-align: center;
+                color: yellow;
+            }
+
+
+            #footerbox a {
+                color: yellow;
+            }
+
+            #headerbox {
+                width: auto;
+                padding: auto;
+                margin: auto;
+                border: 15px solid purple;
+                border-radius: 12px;
+                text-align: center;
+                color: yellow;
+            }
+
+            nav a {
+                text-align: center;
+                font-size: auto;
+            }
+
+            #space {
+                display: block;
+            }
+
+            .connerpicmobile {
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 770px) {
+            #mobile {
+                display: none;
+            }
+
+            .mobile {
+                display: none;
+            }
+        }
