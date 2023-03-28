@@ -8,6 +8,7 @@
         <!--<link rel="stylesheet" type="text/css" href="https://connergarris.github.io/SoftwareDev2023/styles.css" > -->
         <link rel="stylesheet" type="text/css" href="css/contactme.css" >
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Press+Start+2P&family=Roboto+Mono&display=swap" rel="stylesheet">
+        <script src="contact.js" defer></script>
 
     </head>
     <body>
@@ -60,7 +61,33 @@
 
         </article>
 
-
+        <article id="formbox">
+        <h1 class="desktop">Newsletter Sign Up</h1>
+        <h1 class="mobile">News</h1>
+        <h1 class="mobile">letter</h1>
+        <h1 class="mobile">Sign Up</h1>
+        <p class="ptext">Please tick the box of what you are intrested in hearing my future projects.</p>
+            <form onsubmit="return validateForm()">
+                <label for="email-input">Email:</label>
+                <input type="email" id="email-input" name="email" required><br>
+        
+                <label for="name-input">Name:</label>
+                <input type="text" id="name-input" name="name" required><br>
+        
+                <label id="interests-label">Interests:</label><br>
+                <input type="checkbox" id="python-input" name="interests" value="python">
+                <label for="python-input">Python</label><br>
+                <input type="checkbox" id="javascript-input" name="interests" value="javascript">
+                <label for="javascript-input">JavaScript</label><br>
+                <input type="checkbox" id="html-input" name="interests" value="html">
+                <label for="html-input">HTML</label><br>
+                <input type="checkbox" id="sql-input" name="interests" value="sql">
+                <label for="sql-input">SQL</label><br>
+        
+                <input type="submit" value="Subscribe">
+            </form>
+        </article>
+          
         <article>
         
         <section id="navbox" class="desktop">

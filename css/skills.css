@@ -164,6 +164,60 @@
             text-shadow: 2px 2px #ff0000;
         }
 
+        #projectbox {
+            width: 75vh;
+            padding: 0px;
+            margin: 10px auto;
+            border: 15px solid purple;
+            border-radius: 12px;
+            background-color: black;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        #projectbox a {
+            text-decoration: none;
+            color: purple;
+        }
+
+        #projectbox a:hover {
+            color: yellow;
+        }
+
+        tr:hover {background-color: coral;}
+
+        tr {
+            background-color: black;
+        }
+
+        table, th, td {
+            border: 5px solid purple;
+            border-collapse: collapse;
+            color: purple;
+        }
+
+        table {
+            width: 50%;
+            margin: auto;
+        }
+
+        th,td {
+            padding: 15px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+
+
+        th {
+            background-color: coral;
+        }
+
+        
+
+
 
 
 
@@ -224,6 +278,28 @@
                 border-radius: 12px;
                 text-align: center;
                 color: yellow;
+            }
+
+            #projectbox {
+                width: auto;
+                padding: auto;
+                margin: auto;
+                border-radius: 12px;
+                text-align: center;
+                color: yellow;
+            }
+
+
+            table {
+                overflow-x: auto;
+                display: block;
+                width: 50vh;
+            }
+
+            td { 
+                overflow: hidden; 
+                text-overflow: ellipsis; 
+                word-wrap: break-word;
             }
 
             nav a {
