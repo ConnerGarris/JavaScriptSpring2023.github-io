@@ -1,5 +1,3 @@
-const form = document.getElementById('recommendations-form');
-
 //Allows you to submit multiple times by listening to click event instead of submit event
 let submitbtn = document.getElementById('submitbtn');
 submitbtn.addEventListener("click", validateForm);
@@ -27,7 +25,7 @@ function validateForm(event) {
     console.log(email.value);
     console.log(phone.value);
 
-    console.log("IsValid email is reporting " + isValidEmail(email.value));
+    console.log("Is Valid email is reporting " + isValidEmail(email.value));
 
 
     //Check for a blank name since this function overrides the required function
