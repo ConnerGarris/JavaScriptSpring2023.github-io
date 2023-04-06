@@ -18,6 +18,7 @@ function validateForm(event) {
     let email = document.getElementById("email");
     let name = document.getElementById("name");
     let phone = document.getElementById("phone");
+    let advice = document.getElementById("recommendation")
     let newsletter = document.getElementById("newsletter");
     let feedbackboxes = document.querySelectorAll('input[name="Atmosphere"], input[name="Customer Service"], input[name="Coffee"], input[name="Tea"], input[name="Espresso"]');
     let feedbackvalues = [];
@@ -81,6 +82,7 @@ function validateForm(event) {
       console.log("Phone #: " + phone.value);
       console.log("Signed up for Newsletter?: " + newsletter.value);
       console.log("Feedback options selected: " + feedbackvalues);
+      console.log("Recommendation: " + advice.value)
       form.submit();
     }
     else {
