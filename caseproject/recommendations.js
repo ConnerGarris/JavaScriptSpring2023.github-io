@@ -1,88 +1,106 @@
 const form = document.getElementById('recommendations-form');
 
-form.addEventListener('submit', validateForm);
+//Allows you to submit multiple times by listening to click event instead of submit event
+let submitbtn = document.getElementById('submitbtn');
+submitbtn.addEventListener("click", validateForm);
 
+console.log("javascriptloaded");
+
+//Store A Boolean value to track if the form is valid outside function to obtain global scope
+let FormValid = true;
 
 function validateForm(event) {
+    //Prevent the submission on the form until it's validates
     event.preventDefault();
-    const form = event.target;
-  
-    const name = form.elements.name;
-    const email = form.elements.email;
-    const phone = form.elements.phone;
-    const recommendation = form.elements.recommendation;
-    const contactMethod = form.elements['contact-method'];
-    const newsletter = form.elements.newsletter;
-  
-    let isFormValid = true;
-  
-    if (!name.value.trim()) {
-      name.setCustomValidity('Please enter your name.');
-      isFormValid = false;
-    } else {
-      name.setCustomValidity('');
-    }
-  
-    if (!email.value.trim()) {
-      email.setCustomValidity('Please enter your email address.');
-      isFormValid = false;
-    } else if (!isValidEmail(email.value)) {
-      email.setCustomValidity('Please enter a valid email address.');
-      isFormValid = false;
-    } else {
-      email.setCustomValidity('');
-    }
-  
-    if (phone.value == "") {
-        phone.setCustomValidity("Please enter your phone number.");
-      } else if (!isValidPhoneNumber(phone.value)) {
-        phone.setCustomValidity("Please enter a valid phone number.");
-      } else {
-        phone.setCustomValidity("");
-      }
-  
-    if (!recommendation.value.trim()) {
-      recommendation.setCustomValidity('Please enter a recommendation.');
-      isFormValid = false;
-    } else {
-      recommendation.setCustomValidity('');
-    }
-  
-    if (!contactMethod.value) {
-      contactMethod.setCustomValidity('Please select a contact method.');
-      isFormValid = false;
-    } else {
-      contactMethod.setCustomValidity('');
-    }
-  
-    if (!isFormValid) {
+    console.log("validateformran");
+
+    //Get Variables for form to check
+    let email = document.getElementById("email");
+    let name = document.getElementById("name");
+    let phone = document.getElementById("phone");
+    let newsletter = document.getElementById("newsletter");
+    let feedbackboxes = document.querySelectorAll('input[name="Atmosphere"], input[name="Customer Service"], input[name="Coffee"], input[name="Tea"], input[name="Espresso"]');
+    let feedbackvalues = [];
+
+    //diagnostic values
+    console.log(email.value);
+    console.log(phone.value);
+
+    console.log("IsValid email is reporting " + isValidEmail(email.value));
+
+
+    //Check for a blank name since this function overrides the required function
+    if (name.value === '') {
+      console.log("The Name String is Empty");
+      name.setCustomValidity("Please fill in the name field!");
+      FormValid = false;
       return;
+    } else {FormValid = true;};
+    //Check for a valid email
+    if (!isValidEmail(email.value)) {
+      FormValid = false;
+      email.setCustomValidity("Please type in a valid email address in the format xxx@xxx.com")
+      console.log("Email is wrong and form valid is stored as " + FormValid);
+      return;
+    } else {
+      FormValid = true;
     }
-  
-    // Form is valid
-    window.alert("Thank you for submitting your recommendation!")
-    console.log('Submitting form with data:');
-    console.log({
-      name: name.value.trim(),
-      email: email.value.trim(),
-      phone: phone.value.trim(),
-      recommendation: recommendation.value.trim(),
-      contactMethod: contactMethod.value,
-      newsletter: newsletter.checked,
+    //Check for a phone number
+    if (!isValidPhoneNumber(phone.value)) {
+      phone.setCustomValidity("Please type your phone number in the format xxxxxxxxxx");
+      FormValid = false;
+      console.log("Form valid is stored as " + FormValid);
+      return;
+    } else {
+      FormValid = true;
+      console.log("Phone number was right form valid is " + FormValid);
+    } //Make sure to reset it it's right
+
+
+    //Process The newsletter checkbox
+    if (!newsletter.checked) {
+      newsletter.value = "No"
+    }
+
+    //For every feedback box that is check add it to the feedback values array
+    feedbackboxes.forEach((checkbox) => {
+      if (checkbox.checked) {
+        feedbackvalues.push(checkbox.value);
+      }
     });
-  
-    form.submit();
+
+    //Convert to string because assignment requires it
+    feedbackvalues = ArraryToString(feedbackvalues)
+
+    console.log("Further down the chain form valid is stored as " + FormValid);
+    if (FormValid) {
+      console.log("Form submitted" + FormValid);
+      console.log("Final Form Info");
+      console.log("Name: " + name.value);
+      console.log("Email: " + email.value);
+      console.log("Phone #: " + phone.value);
+      console.log("Signed up for Newsletter?: " + newsletter.value);
+      console.log("Feedback options selected: " + feedbackvalues);
+      form.submit();
+    }
+    else {
+      console.log("form was not valid" + FormValid);
+      return;
+    };
   }
 
 
   function isValidEmail(email) {
-    // Check if email format is valid using regular expression
-    const regex = /\S+@\S+\.\S+/;
-    return regex.test(email);
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
   }
   
   function isValidPhoneNumber(phoneNumber) {
     // Check if phone number format is valid using regular expression
     const regex = /^\d{10}$/;
     return regex.test(phoneNumber);
+  }
+
+  function ArraryToString(text) {
+    return text.toString();
   }
