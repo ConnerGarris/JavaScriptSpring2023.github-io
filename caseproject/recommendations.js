@@ -82,7 +82,8 @@ function validateForm(event) {
       console.log("Phone #: " + phone.value);
       console.log("Signed up for Newsletter?: " + newsletter.value);
       console.log("Feedback options selected: " + feedbackvalues);
-      console.log("Recommendation: " + advice.value)
+      console.log("Recommendation: " + advice.value);
+      window.alert("Thank your for submitting your recommendation!");
       form.submit();
     }
     else {
