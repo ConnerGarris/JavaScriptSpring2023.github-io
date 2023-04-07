@@ -2,6 +2,8 @@
 let submitbtn = document.getElementById('submitbtn');
 submitbtn.addEventListener("click", validateForm);
 
+//Get the form id and make it a global value allowing the validate form button to submit
+let form = document.getElementById("recommendations-form");
 console.log("javascriptloaded");
 
 //Store A Boolean value to track if the form is valid outside function to obtain global scope
