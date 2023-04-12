@@ -1,0 +1,1 @@
+Update skills.css to ensure proper link display and hamburger button functionality then submit assignment

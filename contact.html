@@ -9,6 +9,8 @@
         <link rel="stylesheet" type="text/css" href="css/contactme.css" >
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Press+Start+2P&family=Roboto+Mono&display=swap" rel="stylesheet">
         <script src="contact.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js" defer></script>
+        <script src="linkscript.js" defer></script>
 
     </head>
     <body>
@@ -22,21 +24,51 @@
             <h2>Conner Garris</h2>
         </header>
 
-        <article id="navbox" class="mobile">
-            <nav>
-                <a href="index.html">Home</a>
-                <div id="space">&nbsp;&nbsp;</div>
-                <a href="https://connergarris.github.io/SoftwareDev2023/clientside/clientside.html">ClientSide Portfolio</a>
-                <div id="space">&nbsp;&nbsp;&nbsp;</div>
-                <a href="caseproject/homepage.html">Case Project</a>
-                <div id="space">&nbsp;&nbsp;</div>
-                <a href="https://connergarris.github.io/SoftwareDev2023/aboutme.html">About Me</a>
-                <div id="space">&nbsp;&nbsp;</div>
-                <a href="https://connergarris.github.io/SoftwareDev2023/skills.html">Skills</a>
-            </nav>
+        <article id="navbox">
+            <nav class="navbar">
+                <a href="#" class="nav-logo">Links</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="skills.html" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="clientside/clientside.html" class="nav-link">ClientSide Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="caseproject/homepage.html" class="nav-link">Case Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutme.html" class="nav-link">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact Me</a>
+                    </li>
+                </ul>
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+             </nav>
+    
+                <nav id="mobilenav" class="fixednav">
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="https://connergarris.github.io/SoftwareDev2023/clientside/clientside.html">ClientSide Portfolio</a></li>
+                    <li><a href="caseproject/homepage.html">Case Project</a></li>
+                    <li><a href="https://connergarris.github.io/SoftwareDev2023/aboutme.html">About Me</a></li>
+                    <li><a href="https://connergarris.github.io/SoftwareDev2023/contact.html">Contact Me</a></li>
+                </nav>
         </article>
 
-
+    <!--Bypassing Googles Autoplay Restrictions using Iframes-->
+    <iframe src="media/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <section>
+        <audio controls autoplay loop>
+            <source src="media/drowsy.mp3" type="audio/mp3"/>
+            <source src="media/drowsy.ogg" type="audio/ogg"/>
+            Your browser does not support the audio element.
+        </audio>
+    </section>
         
         <article>
         <section id="contactlist" class="desktop">
@@ -89,21 +121,6 @@
         </article>
           
         <article>
-        
-        <section id="navbox" class="desktop">
-                <nav>
-                    <a href="index.html">Home</a>
-                    &nbsp;&nbsp;
-                    <a href="https://connergarris.github.io/SoftwareDev2023/clientside/clientside.html">ClientSide Portfolio</a>
-                    &nbsp;&nbsp;&nbsp;
-                    <a href="caseproject/homepage.html">Case Project</a>
-                    &nbsp;&nbsp;
-                    <a href="https://connergarris.github.io/SoftwareDev2023/aboutme.html">About Me</a>
-                    &nbsp;&nbsp;
-                    <a href="https://connergarris.github.io/SoftwareDev2023/skills.html">Skills</a>
-                </nav>
-        </section>
-
         <section><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3409.667126293413!2d-89.2991428849002!3d31.285301581447946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x889cddbda9eae58d%3A0x4c5a93546e1f0b8c!2sPearl%20River%20Community%20College%20Forrest%20County%20Center!5e0!3m2!1sen!2sus!4v1676313428959!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></section>
         </article>
     </body>

@@ -8,6 +8,8 @@
         <!-- <link rel="stylesheet" type="text/css" href="https://connergarris.github.io/SoftwareDev2023/styles.css" > -->
         <link rel="stylesheet" type="text/css" href="css\skills.css" >
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js" defer></script>
+        <script src="linkscript.js" defer></script>
 
     </head>
 
@@ -64,35 +66,41 @@
 
 
         <article id="navbox">
-
-            <nav class="mobile">
-                <a href="index.html">Home</a>
-                <div id="space">&nbsp;&nbsp;</div>
-                <a href="https://connergarris.github.io/SoftwareDev2023/clientside/clientside.html">ClientSide Portfolio</a>
-                <div id="space">&nbsp;&nbsp;&nbsp;</div>
-                <a href="caseproject/homepage.html">Case Project</a>
-                <div id="space">&nbsp;&nbsp;</div>
-                <a href="https://connergarris.github.io/SoftwareDev2023/aboutme.html">About Me</a>
-                <div id="space">&nbsp;&nbsp;</div>
-                <a href="https://connergarris.github.io/SoftwareDev2023/contact.html">Contact Me</a>
-            </nav>
-    
-            
-            <section id="desktop">
-                <nav>
-                    <a href="index.html">Home</a>
-                    &nbsp;&nbsp;
-                    <a href="https://connergarris.github.io/SoftwareDev2023/clientside/clientside.html">ClientSide Portfolio</a>
-                    &nbsp;&nbsp;&nbsp;
-                    <a href="caseproject/homepage.html">Case Project</a>
-                    &nbsp;&nbsp;
-                    <a href="https://connergarris.github.io/SoftwareDev2023/aboutme.html">About Me</a>
-                    &nbsp;&nbsp;
-                    <a href="https://connergarris.github.io/SoftwareDev2023/contact.html">Contact Me</a>
+            <nav class="navbar">
+                <a href="#" class="nav-logo">Links</a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="skills.html" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="clientside/clientside.html" class="nav-link">ClientSide Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="caseproject/homepage.html" class="nav-link">Case Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutme.html" class="nav-link">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact Me</a>
+                    </li>
+                </ul>
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
                 </nav>
-            </section>
     
-            </article>
+                <nav id="mobilenav" class="fixednav">
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="https://connergarris.github.io/SoftwareDev2023/clientside/clientside.html">ClientSide Portfolio</a></li>
+                    <li><a href="caseproject/homepage.html">Case Project</a></li>
+                    <li><a href="https://connergarris.github.io/SoftwareDev2023/aboutme.html">About Me</a></li>
+                    <li><a href="https://connergarris.github.io/SoftwareDev2023/contact.html">Contact Me</a></li>
+                </nav>
+
+        </article>
 
         
 
@@ -101,6 +109,15 @@
     <footer>
         <article>
         <section><div id="footerbox"><p>E-Mail:</p><a href="mailto:conner.garris.22@student.prcc.edu">conner.garris.22@student.prcc.edu</a></div></section>
+        <!--Bypassing Googles Autoplay Restrictions using Iframes-->
+        <iframe src="media/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+        <section>
+            <audio controls autoplay loop>
+                <source src="media/drowsy.mp3" type="audio/mp3"/>
+                <source src="media/drowsy.ogg" type="audio/ogg"/>
+                Your browser does not support the audio element.
+            </audio>
+        </section>
         <section><img src="images/connergarrispic.jpg" alt="ConnerGarrisPortfolioPic" class="mobile connerpicmobile"></section>
         </article>
     </footer>

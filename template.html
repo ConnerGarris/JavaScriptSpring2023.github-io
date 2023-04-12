@@ -9,6 +9,8 @@
         <link rel="stylesheet" type="text/css" href="css/template.css" >
         
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Permanent+Marker&family=Press+Start+2P&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js" defer></script>
+        <script src="linkscript.js" defer></script>
 
     </head>
     <header>
@@ -61,6 +63,15 @@
     <footer>
         <article>
         <section><div id="footerbox"><p>E-Mail:</p><a href="mailto:conner.garris.22@student.prcc.edu">conner.garris.22@student.prcc.edu</a></div></section>
+        <!--Bypassing Googles Autoplay Restrictions using Iframes-->
+        <iframe src="media/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+        <section>
+            <audio controls autoplay loop>
+                <source src="media/drowsy.mp3" type="audio/mp3"/>
+                <source src="media/drowsy.ogg" type="audio/ogg"/>
+                Your browser does not support the audio element.
+            </audio>
+        </section>
         <section><img src="images/connergarrispic.jpg" alt="ConnerGarrisPortfolioPic" class="mobile connerpicmobile"></section>
         </article>
     </footer>
