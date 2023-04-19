@@ -24,6 +24,7 @@
     
     
     
+    
     /* Style Sheet for WebDev2023 Portfolio */
     body {
         font-family: Arial, sans-serif;
@@ -188,12 +189,7 @@
         th {
             background-color: coral;
         }
-
-        
-
-
-
-
+    
 
         /* For mobile phones: */
         @media only screen and (max-width: 769px) {
