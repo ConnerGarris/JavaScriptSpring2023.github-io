@@ -9,6 +9,10 @@
         background-color: purple;
     }
 
+    .social {
+        display: inline-block;
+    }
+
     .fixednav {
         display: none;
     }

@@ -9,9 +9,7 @@
         background-color: purple;
     }
 
-    #social {
-        display: inline-block;
-    }
+
 
     .fixednav {
         display: none;
@@ -275,4 +273,8 @@
             .mobile {
                 display: none;
             }
+        }
+
+        .social {
+            display: inline-block;
         }

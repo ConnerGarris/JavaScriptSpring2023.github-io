@@ -20,6 +20,9 @@
         object-fit: cover;
     }
     
+    .social {
+        display: inline-block;
+    }
     
     
     
