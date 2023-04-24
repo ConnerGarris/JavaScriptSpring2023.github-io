@@ -1,0 +1,51 @@
+body {
+    background-color:black;
+    color: purple;
+}
+
+
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Press Start 2P','cursive';
+}
+
+body a {
+    text-align: center;
+    color: purple;
+    font-family: 'Gruppo', cursive;
+    font-size: 2em;
+}
+
+body p {
+    text-align: center;
+}
+
+#headerbox{
+    border: 12px solid purple;
+}
+
+#linkbox{
+    border: 12px solid purple;
+}
+
+@media only screen and (max-width: 769px) {
+    #headerbox {
+        width: auto;
+        padding: auto;
+        margin: auto;
+        border: 15px solid purple;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    #linkbox {
+        width: auto;
+        padding: auto;
+        margin: auto;
+        border: 15px solid purple;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+}
