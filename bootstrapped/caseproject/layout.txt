@@ -1,0 +1,21 @@
+1.Home Page- About Us Location etc. etc.
+2.Meet Us - The Staff include lord Uutrich
+3. The Menu - A picture of the menu for desktop devices and paragraph elements for mobile devices
+
+
+
+Home Page
+About Us - Picture of coffee house to the right
+Instagram feed
+Photo Gallery thats a virtual tour of the coffeehouse and various drinks (Javascript needed to implement photo gallery)
+Times that they are open (Javascript that indicates if they are open or not and if not when they open next)
+Location
+Phone Number
+Logo
+
+Meet Us
+3 Boxes that contain the staff members and small descriptions of each
+
+The Menu
+A picture of the menu for desktop devices and paragraph elements for mobile devices 
+
