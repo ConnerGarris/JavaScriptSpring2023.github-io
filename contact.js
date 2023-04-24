@@ -1,8 +1,9 @@
 const emailInput = document.getElementById('email-input');
 const nameInput = document.getElementById('name-input');
 const interestsInputs = document.getElementsByName('interests');
-
-function validateForm() {
+console.log("java loaded")
+function validateForm(_event) {
+    
     let isValid = true;
 
     // Check if email address is valid

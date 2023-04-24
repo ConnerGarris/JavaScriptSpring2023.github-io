@@ -1,0 +1,36 @@
+header#headerbox {
+    background-color: #343a40!important;
+}
+
+html {
+    background-color: #343a40!important;
+}
+
+.footertext {
+    font-size: 2rem;
+}
+
+.footerpic {
+    margin: auto;
+}
+.mobile {
+    display: none;
+}
+
+.social {
+    display: inline-block;
+    margin: auto;
+}
+
+  
+/* Styling for mobile phones */
+@media (max-width: 767px) {
+    .desktop {
+      display: none;
+    }
+    .mobile{
+        display:block;
+    }
+    
+  }
+  
