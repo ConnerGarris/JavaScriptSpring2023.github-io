@@ -22,8 +22,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
    margin: 0;
@@ -35,7 +35,7 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
    display: block;
 }
@@ -46,7 +46,7 @@ body {
    background: white;
    margin: 30px auto;
    font-family: Verdana, Geneva, sans-serif;
-   position: relative;   
+   position: relative;  
 }
 
 ol, ul {
@@ -66,7 +66,7 @@ header {
 /* main content */
 article {
    width: 960px;
-   height: 250px;
+   height: 350px;
    text-align: left;
    background: #FFCF40;
 }
@@ -74,7 +74,7 @@ article {
 article h2 {
    font-weight: bold;
    font-size: 24px;
-   padding: 10px;
+   padding: 10px ;
 }
 
 /* form */
@@ -83,9 +83,9 @@ form {
 }
 
 input {
-   float: left;
+   
    clear: left;
-   margin: 10px;
+   margin: 15px;
 }
 
 label {
@@ -96,7 +96,7 @@ label {
 aside {
    position: absolute;
    top: 120px;
-   left: 400px;
+   left: 490px;
    outline: 1px solid red;
 }
 
@@ -108,7 +108,7 @@ aside span {
 aside span#totalLab {
    top: 0px;
    left: 0px;
-   width: 220px;   
+   width: 220px;  
 }
 
 aside span#foodTotal {
@@ -116,12 +116,12 @@ aside span#foodTotal {
    left: 280px;
    width: 100px;
    text-align: right;
-}   
+}  
 
 aside span#taxLab {
    top: 40px;
    left: 0px;
-   width: 220px;   
+   width: 220px;  
 }
 
 aside span#foodTax {
@@ -134,7 +134,7 @@ aside span#foodTax {
 aside span#billLab {
    top: 80px;
    left: 0px;
-   width: 220px;   
+   width: 220px;  
 }
 
 aside span#totalBill {
