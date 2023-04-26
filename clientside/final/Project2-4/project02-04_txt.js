@@ -23,9 +23,9 @@ function calculateTotal() {
    var foodTax = foodTotal * 0.1;
    var totalBill = foodTotal + foodTax;
    
-   document.getElementById('foodTotal').innerHTML = '$' + foodTotal.toFixed(2);
-   document.getElementById('foodTax').innerHTML = '$' + foodTax.toFixed(2);
-   document.getElementById('totalBill').innerHTML = '$' + totalBill.toFixed(2);
+   document.getElementById('foodTotal').innerHTML = formatCurrency(foodTotal);
+   document.getElementById('foodTax').innerHTML = formatCurrency(foodTax);
+   document.getElementById('totalBill').innerHTML = formatCurrency(totalBill);
    }
    
 // Function to display a numeric value as a text string in the format $##.## 
