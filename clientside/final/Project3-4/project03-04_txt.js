@@ -3,8 +3,8 @@
       Project 03-04
 
       Application to write a list of customer reviews
-      Author: 
-      Date:   
+      Author: Conner Garris
+      Date: 4/25/2023
 
       Filename: project03-04.js
 */

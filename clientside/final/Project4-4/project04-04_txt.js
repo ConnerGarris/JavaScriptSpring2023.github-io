@@ -3,8 +3,8 @@
       Project 04-04
 
       Application to determine change from a cash amount
-      Author: 
-      Date:   
+      Author: Conner Garris
+      Date: 4/25/2023 
 
       Filename: project04-04.js
 */
