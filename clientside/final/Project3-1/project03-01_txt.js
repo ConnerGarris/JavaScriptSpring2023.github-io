@@ -39,6 +39,10 @@ function calculateBillTotal() {
   const item4Cost = item4.value * menuPrices.item4;
   const item5Cost = item5.value * menuPrices.item5;
 
+
+
+
+
   const subtotalValue = item1Cost + item2Cost + item3Cost + item4Cost + item5Cost;
   subtotal.textContent = subtotalValue.toFixed(2);
 
